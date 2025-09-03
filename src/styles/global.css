@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.desactive {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
+
+a.desactive,
+button.desactive,
+.desactive a,
+.desactive button {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
+
+:root {
+  --gray-color: #c1c1c1;
+  --white-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: "Poppins", Arial, sans-serif;
+}

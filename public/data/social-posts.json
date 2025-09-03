@@ -1,0 +1,122 @@
+[
+  {
+    "authorName": "Antônio Souza Campos",
+    "authorSubtitle": "Agricultor",
+    "content": "🌱 <strong>Dica boa pra quem planta soja!</strong> 🌱<br /><br />Amigos da roça, uma técnica que venho usando e tem dado resultado é o manejo certo do enxofre e do boro no solo. Muita gente cuida do NPK, mas esquece desses dois — e eles fazem diferença na florada e na formação das vagens!<br /><br />👉 Antes de plantar, fiz uma análise de solo e vi que tava faltando enxofre. Corrigi com gesso agrícola e complementei com boro na adubação foliar. Resultado? A lavoura ficou mais uniforme, com mais vagens por planta e grãos bem formados.<br /><br />Não precisa gastar muito, só fazer no tempo certo e com orientação. Vale a pena dar uma olhada nisso!<br /><br />🌾 <strong>Produção aumentou e a soja agradece!</strong>",
+    "topics": "Soja, Manejo de Solo, Enxofre, Boro, Florada, Vagens, Adubação Foliar, Produção Agrícola",
+    "likes": 187,
+    "coments": [
+      {
+        "name": "Maria Oliveira",
+        "data": "2024-06-01",
+        "content": "Ótima dica, Antônio! Vou testar na próxima safra."
+      },
+      {
+        "name": "João Batista",
+        "data": "2024-06-02",
+        "content": "Também uso gesso agrícola e realmente faz diferença!"
+      },
+      {
+        "name": "Carlos Silva",
+        "data": "2024-06-03",
+        "content": "Muito bom saber, obrigado por compartilhar!"
+      }
+    ]
+  },
+  {
+    "authorName": "Maria Oliveira",
+    "authorSubtitle": "Produtora Rural",
+    "content": "🌾 <strong>Dica para quem cultiva milho!</strong> 🌽<br /><br />Sempre faço a rotação de culturas aqui na fazenda. Alternar milho com leguminosas ajuda a melhorar a fertilidade do solo e reduz pragas.<br /><br />💧 Outra dica: fique atento à irrigação nas fases críticas do milho, principalmente na floração e enchimento de grãos. Isso faz toda diferença na produtividade!",
+    "topics": "Milho, Rotação de Culturas, Irrigação, Pragas, Produção Agrícola",
+    "likes": 142,
+    "coments": [
+      {
+        "name": "Ana Paula",
+        "data": "2024-06-01",
+        "content": "Faço rotação com feijão e percebi melhora no solo também!"
+      },
+      {
+        "name": "Gabriel Neves",
+        "data": "2024-06-02",
+        "content": "Ótima dica sobre irrigação, obrigado!"
+      }
+    ]
+  },
+  {
+    "authorName": "João Batista",
+    "authorSubtitle": "Engenheiro Agrônomo",
+    "content": "🍅 <strong>Tomate saudável, colheita garantida!</strong> 🍅<br /><br />Para evitar doenças fúngicas no tomateiro, sempre faço espaçamento adequado entre as plantas e evito molhar as folhas durante a irrigação.<br /><br />🐞 Uso controle biológico para pragas, como joaninhas para pulgões. Assim, mantenho a produção mais sustentável e saudável.",
+    "topics": "Tomate, Doenças Fúngicas, Controle Biológico, Pragas, Agricultura Sustentável",
+    "likes": 198,
+    "coments": [
+      {
+        "name": "Mariana Costa",
+        "data": "2024-06-01",
+        "content": "Uso joaninhas também, são ótimas aliadas!"
+      },
+      {
+        "name": "Lucas F.",
+        "data": "2024-06-02",
+        "content": "Espaçamento faz toda diferença mesmo. Parabéns pela dica!"
+      },
+      {
+        "name": "Fernanda S.",
+        "data": "2024-06-03",
+        "content": "Vou aplicar na minha horta, obrigado!"
+      },
+      {
+        "name": "Patrícia G.",
+        "data": "2024-06-04",
+        "content": "Muito bom! Agricultura sustentável é o caminho."
+      }
+    ]
+  },
+  {
+    "authorName": "Ana Paula",
+    "authorSubtitle": "Pecuarista",
+    "content": "🐄 <strong>Manejo de pastagem eficiente!</strong> 🌿<br /><br />Para garantir uma boa alimentação do gado, faço rotação de pastagens e sempre verifico a qualidade do solo. Isso aumenta a produção de forragem e a saúde do rebanho.<br /><br />Fiquem ligados nas dicas de manejo para uma pecuária mais rentável!",
+    "topics": "Manejo de Solo, Produção Agrícola, Agricultura Sustentável",
+    "likes": 95,
+    "coments": [
+      {
+        "name": "Beatriz Lima",
+        "data": "2024-06-01",
+        "content": "Rotação de pastagem mudou minha produção!"
+      }
+    ]
+  },
+  {
+    "authorName": "Carlos Silva",
+    "authorSubtitle": "Floricultor",
+    "content": "🌸 <strong>Flores mais vibrantes e saudáveis!</strong> 🌼<br /><br />A adubação foliar é um segredo para flores com cores mais intensas e maior durabilidade. Uso um bom fertilizante rico em potássio na fase de floração. Experimentem!<br /><br />As plantas agradecem e o jardim fica um espetáculo!",
+    "topics": "Adubação Foliar, Florada",
+    "likes": 221,
+    "coments": [
+      {
+        "name": "Bianca L.",
+        "data": "2024-06-01",
+        "content": "Adorei a dica, vou testar no meu jardim!"
+      },
+      {
+        "name": "Sofia Mendes",
+        "data": "2024-06-02",
+        "content": "Flores lindas mesmo!"
+      },
+      {
+        "name": "Fernando Lima",
+        "data": "2024-06-03",
+        "content": "Uso potássio nas minhas plantas e funciona muito bem."
+      },
+      {
+        "name": "Juliana B.",
+        "data": "2024-06-04",
+        "content": "Obrigada por compartilhar!"
+      },
+      {
+        "name": "Márcio V.",
+        "data": "2024-06-05",
+        "content": "Dica valiosa para quem trabalha com flores."
+      }
+    ]
+  }
+]
