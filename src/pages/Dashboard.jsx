@@ -3,9 +3,8 @@ import DashboardCard from "../components/DashboardCard";
 import "../styles/dashboard.css";
 
 export default function Dashboard() {
-  const username = "Edson"; // traga de contexto/autenticação quando tiver
+  const username = "Edson";
 
-  // links desativados replicam o comportamento do dashboard.js (bloqueia click)
   const disabledNav = [
     { id: "sobre", label: "Sobre", href: "#", disabled: true },
     { id: "termos", label: "Termos", href: "#", disabled: true },
@@ -47,7 +46,6 @@ export default function Dashboard() {
               title="Troca de Conhecimentos"
               text="Compartilhe experiências com outros produtores"
               onClick={() => (window.location.href = "/social")}
-              // quando tiver router: useNavigate('/social')
             />
           </div>
         </section>

@@ -1,4 +1,3 @@
-// mesma máscara de data do seu login.js, em forma de função reutilizável
 export function maskDate(raw) {
   let value = String(raw || "")
     .replace(/\D/g, "")

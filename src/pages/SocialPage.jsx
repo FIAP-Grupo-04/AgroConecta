@@ -12,7 +12,7 @@ export default function SocialPage() {
   const [topic, setTopic] = useState(""); // filtro por tópico
   const [openModal, setOpenModal] = useState(false);
 
-  // carregar dados dos JSONs (equivalente ao topic-handler.js)
+  // carregar dados dos JSONs
   useEffect(() => {
     async function load() {
       const [tres, pres] = await Promise.all([
@@ -22,7 +22,6 @@ export default function SocialPage() {
       const t = await tres.json();
       const raw = await pres.json();
 
-      // hidrata likes do localStorage
       const saved = JSON.parse(localStorage.getItem("social_likes") || "{}");
 
       const withIds = raw.map((p, idx) => {
@@ -80,7 +79,6 @@ export default function SocialPage() {
   }, [posts, query, topic]);
 
   const addPost = useCallback((newPost) => {
-    // insere no topo como no JS original
     setPosts((prev) => [newPost, ...prev]);
   }, []);
 

@@ -18,8 +18,6 @@ export default function ContactPage() {
 
   function validate(v) {
     const errs = [];
-    // Validações iguais às do validacaoForm.js
-    // Nome
     if (!v.nome.trim()) {
       errs.push("O campo Nome é obrigatório.");
     } else if (v.nome.trim().split(" ").length < 2) {
@@ -32,7 +30,7 @@ export default function ContactPage() {
     } else if (!regexEmail.test(v.email.trim())) {
       errs.push("Informe um e-mail válido.");
     }
-    // Mensagem
+
     const msg = v.mensagem.trim();
     if (!msg) {
       errs.push("O campo Mensagem é obrigatório.");
@@ -48,7 +46,6 @@ export default function ContactPage() {
     setErrors(errs);
     if (errs.length === 0) {
       alert("Formulário enviado com sucesso!");
-      // aqui você pode chamar sua API; por ora só limpamos o form
       setValues({ nome: "", email: "", assunto: "", mensagem: "" });
     }
   }
@@ -61,7 +58,6 @@ export default function ContactPage() {
         <p>Tire suas dúvidas, envie sugestões ou fale com a nossa equipe</p>
       </div>
 
-      {/* mantém IDs/classe para casar com seu CSS */}
       <form id="form-contato" onSubmit={onSubmit} noValidate>
         <div className="card-info">
           <div className="form-group">
@@ -108,7 +104,6 @@ export default function ContactPage() {
 
         <button type="submit">Enviar</button>
 
-        {/* mesmo elemento de erro do HTML original */}
         <div id="mensagem-erro" style={{ color: "red", marginTop: 10 }}>
           {errors.length > 0 && (
             <div dangerouslySetInnerHTML={{ __html: errors.join("<br>") }} />

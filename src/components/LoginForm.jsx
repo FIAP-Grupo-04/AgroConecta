@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// Mantém o visual da sua #form-login e o comportamento do login.js
 export default function LoginForm() {
   const [values, setValues] = useState({ email: "", password: "" });
 

@@ -5,10 +5,9 @@ import RegisterForm from "../components/RegisterForm";
 
 export default function LoginRegister() {
   // controla o modo (login vs cadastro) e a animação "invertido"
-  const [mode, setMode] = useState("login"); // 'login' | 'register'
+  const [mode, setMode] = useState("login");
   const isRegister = mode === "register";
 
-  // classe raiz preservando suas classes e animação
   const containerClass = ["container-login", isRegister ? "invertido" : ""]
     .filter(Boolean)
     .join(" ");

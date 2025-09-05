@@ -39,7 +39,6 @@ export default function RegisterForm() {
       return;
     }
 
-    // aqui você integraria com sua API; por enquanto apenas simula
     alert("Cadastro enviado!");
   }
 

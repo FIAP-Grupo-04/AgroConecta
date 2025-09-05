@@ -2,9 +2,7 @@ import React from "react";
 
 export default function Header({ username = "Usuário", navLinks = [] }) {
   function onLogout() {
-    // comportamento do logout.js
     window.location.href = "/";
-    // ou, com react-router: navigate('/')
   }
 
   return (
