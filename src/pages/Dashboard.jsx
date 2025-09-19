@@ -3,17 +3,9 @@ import DashboardCard from "../components/DashboardCard";
 import "../styles/dashboard.css";
 
 export default function Dashboard() {
-  const username = "Edson";
-
-  const disabledNav = [
-    { id: "sobre", label: "Sobre", href: "#", disabled: true },
-    { id: "termos", label: "Termos", href: "#", disabled: true },
-    { id: "contato", label: "Contato", href: "/contato" },
-  ];
-
   return (
     <>
-      <Header username={username} navLinks={disabledNav} />
+      <Header />
 
       <main className="dashboard-main">
         <section className="dashboard-section">
@@ -30,7 +22,7 @@ export default function Dashboard() {
               imgSrc="/images/graph.png"
               title="Cotação de Preços"
               text="Consulte valores atualizados do Ceasa"
-              disabled
+              onClick={() => (window.location.href = "/cotacoes")}
             />
           </div>
 

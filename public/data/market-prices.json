@@ -1,0 +1,59 @@
+[
+  { "id": "soja", "name": "Soja (Saca)", "unit": "saca", "price": 120.0 },
+  { "id": "milho", "name": "Milho (Saca)", "unit": "saca", "price": 92.0 },
+  { "id": "trigo", "name": "Trigo (Saca)", "unit": "saca", "price": 78.5 },
+  { "id": "arroz", "name": "Arroz (Kg)", "unit": "kg", "price": 4.2 },
+  { "id": "feijao", "name": "Feijão Carioca (Kg)", "unit": "kg", "price": 7.8 },
+  { "id": "cafe", "name": "Café Verde (Saca)", "unit": "saca", "price": 980.0 },
+  {
+    "id": "algodao",
+    "name": "Algodão (Arroba)",
+    "unit": "arroba",
+    "price": 145.0
+  },
+  {
+    "id": "cana",
+    "name": "Cana-de-Açúcar (Ton)",
+    "unit": "ton",
+    "price": 285.0
+  },
+  {
+    "id": "tomate",
+    "name": "Tomate (Caixa 20kg)",
+    "unit": "caixa",
+    "price": 68.0
+  },
+  { "id": "cebola", "name": "Cebola (Kg)", "unit": "kg", "price": 3.47 },
+  { "id": "batata", "name": "Batata Inglesa (Kg)", "unit": "kg", "price": 3.9 },
+  { "id": "maca", "name": "Maçã (Kg)", "unit": "kg", "price": 6.2 },
+  {
+    "id": "laranja",
+    "name": "Laranja Pera (Caixa 40kg)",
+    "unit": "caixa",
+    "price": 45.0
+  },
+  { "id": "banana", "name": "Banana Nanica (Kg)", "unit": "kg", "price": 2.8 },
+  { "id": "manga", "name": "Manga Tommy (Kg)", "unit": "kg", "price": 4.5 },
+  { "id": "uva", "name": "Uva Niágara (Kg)", "unit": "kg", "price": 7.2 },
+  {
+    "id": "abacaxi",
+    "name": "Abacaxi Pérola (Unidade)",
+    "unit": "un",
+    "price": 5.5
+  },
+  { "id": "ovos", "name": "Ovos Brancos (Dúzia)", "unit": "dz", "price": 9.8 },
+  {
+    "id": "leite",
+    "name": "Leite In Natura (Litro)",
+    "unit": "l",
+    "price": 2.1
+  },
+  { "id": "frango", "name": "Frango Vivo (Kg)", "unit": "kg", "price": 6.0 },
+  {
+    "id": "boi",
+    "name": "Boi Gordo (Arroba)",
+    "unit": "arroba",
+    "price": 238.0
+  },
+  { "id": "suino", "name": "Suíno Vivo (Kg)", "unit": "kg", "price": 7.3 }
+]
