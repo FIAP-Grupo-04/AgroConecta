@@ -1,0 +1,362 @@
+[
+  {
+    "id": "p1",
+    "title": "Tomate Italiano",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 6.5,
+    "stock": 80,
+    "location": "Limeira/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod1",
+      "name": "Sítio Boa Terra",
+      "location": "Limeira/SP",
+      "contactUrl": "https://wa.me/5511999999999"
+    },
+    "createdAt": "2025-11-01T10:00:00Z"
+  },
+  {
+    "id": "p2",
+    "title": "Tomate Italiano (fora do padrão)",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 4.2,
+    "stock": 60,
+    "location": "Limeira/SP",
+    "isUgly": true,
+    "isDonation": false,
+    "producer": {
+      "id": "prod1",
+      "name": "Sítio Boa Terra",
+      "location": "Limeira/SP",
+      "contactUrl": "https://wa.me/5511999999999"
+    },
+    "createdAt": "2025-11-02T09:00:00Z"
+  },
+  {
+    "id": "p3",
+    "title": "Abóbora Cabotiá",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 3.9,
+    "stock": 100,
+    "location": "Campinas/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod2",
+      "name": "Chácara Santa Luzia",
+      "location": "Campinas/SP",
+      "contactUrl": "https://wa.me/5511988888888"
+    },
+    "createdAt": "2025-11-03T08:30:00Z"
+  },
+  {
+    "id": "p4",
+    "title": "Abóbora Cabotiá (fora do padrão)",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 2.5,
+    "stock": 40,
+    "location": "Campinas/SP",
+    "isUgly": true,
+    "isDonation": false,
+    "producer": {
+      "id": "prod2",
+      "name": "Chácara Santa Luzia",
+      "location": "Campinas/SP",
+      "contactUrl": "https://wa.me/5511988888888"
+    },
+    "createdAt": "2025-11-03T10:00:00Z"
+  },
+  {
+    "id": "p5",
+    "title": "Cenoura",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 3.5,
+    "stock": 150,
+    "location": "Piracicaba/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod3",
+      "name": "Fazenda Verde Vida",
+      "location": "Piracicaba/SP",
+      "contactUrl": "https://wa.me/5511977777777"
+    },
+    "createdAt": "2025-11-04T11:00:00Z"
+  },
+  {
+    "id": "p6",
+    "title": "Cenoura fora do padrão (doação)",
+    "category": "Hortifruti",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "Piracicaba/SP",
+    "isUgly": true,
+    "isDonation": true,
+    "producer": {
+      "id": "prod3",
+      "name": "Fazenda Verde Vida",
+      "location": "Piracicaba/SP",
+      "contactUrl": "https://wa.me/5511977777777"
+    },
+    "createdAt": "2025-11-04T11:30:00Z"
+  },
+  {
+    "id": "p7",
+    "title": "Alface Crespa (doação)",
+    "category": "Hortifruti",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "Piracicaba/SP",
+    "isUgly": true,
+    "isDonation": true,
+    "producer": {
+      "id": "prod3",
+      "name": "Fazenda Verde Vida",
+      "location": "Piracicaba/SP",
+      "contactUrl": "https://wa.me/5511977777777"
+    },
+    "createdAt": "2025-11-05T09:00:00Z"
+  },
+  {
+    "id": "p8",
+    "title": "Leite Pasteurizado",
+    "category": "Laticínios",
+    "unit": "lt",
+    "price": 4.5,
+    "stock": 90,
+    "location": "São Pedro/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod4",
+      "name": "Sítio Bom Leite",
+      "location": "São Pedro/SP",
+      "contactUrl": "https://wa.me/5511966666666"
+    },
+    "createdAt": "2025-11-05T14:00:00Z"
+  },
+  {
+    "id": "p9",
+    "title": "Queijo Minas Frescal",
+    "category": "Laticínios",
+    "unit": "kg",
+    "price": 32.0,
+    "stock": 40,
+    "location": "São Pedro/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod4",
+      "name": "Sítio Bom Leite",
+      "location": "São Pedro/SP",
+      "contactUrl": "https://wa.me/5511966666666"
+    },
+    "createdAt": "2025-11-05T15:00:00Z"
+  },
+  {
+    "id": "p10",
+    "title": "Queijo com deformação (doação)",
+    "category": "Laticínios",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "São Pedro/SP",
+    "isUgly": true,
+    "isDonation": true,
+    "producer": {
+      "id": "prod4",
+      "name": "Sítio Bom Leite",
+      "location": "São Pedro/SP",
+      "contactUrl": "https://wa.me/5511966666666"
+    },
+    "createdAt": "2025-11-05T16:30:00Z"
+  },
+  {
+    "id": "p11",
+    "title": "Milho Verde",
+    "category": "Grãos e Cereais",
+    "unit": "cx",
+    "price": 35.0,
+    "stock": 30,
+    "location": "Araras/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod5",
+      "name": "Fazenda Primavera",
+      "location": "Araras/SP",
+      "contactUrl": "https://wa.me/5511955555555"
+    },
+    "createdAt": "2025-11-06T08:00:00Z"
+  },
+  {
+    "id": "p12",
+    "title": "Milho colhido em excesso (doação)",
+    "category": "Grãos e Cereais",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "Araras/SP",
+    "isUgly": false,
+    "isDonation": true,
+    "producer": {
+      "id": "prod5",
+      "name": "Fazenda Primavera",
+      "location": "Araras/SP",
+      "contactUrl": "https://wa.me/5511955555555"
+    },
+    "createdAt": "2025-11-06T09:00:00Z"
+  },
+  {
+    "id": "p13",
+    "title": "Ovos Caipiras (dúzia)",
+    "category": "Carnes e Ovos",
+    "unit": "dz",
+    "price": 14.5,
+    "stock": 70,
+    "location": "Limeira/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod6",
+      "name": "Granja São José",
+      "location": "Limeira/SP",
+      "contactUrl": "https://wa.me/5511944444444"
+    },
+    "createdAt": "2025-11-07T07:00:00Z"
+  },
+  {
+    "id": "p14",
+    "title": "Ovos Pequenos (fora do padrão)",
+    "category": "Carnes e Ovos",
+    "unit": "dz",
+    "price": 9.9,
+    "stock": 60,
+    "location": "Limeira/SP",
+    "isUgly": true,
+    "isDonation": false,
+    "producer": {
+      "id": "prod6",
+      "name": "Granja São José",
+      "location": "Limeira/SP",
+      "contactUrl": "https://wa.me/5511944444444"
+    },
+    "createdAt": "2025-11-07T07:30:00Z"
+  },
+  {
+    "id": "p15",
+    "title": "Feijão Carioca",
+    "category": "Grãos e Cereais",
+    "unit": "kg",
+    "price": 8.5,
+    "stock": 100,
+    "location": "Mogi Guaçu/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod7",
+      "name": "Fazenda Boa Esperança",
+      "location": "Mogi Guaçu/SP",
+      "contactUrl": "https://wa.me/5511933333333"
+    },
+    "createdAt": "2025-11-08T09:00:00Z"
+  },
+  {
+    "id": "p16",
+    "title": "Feijão velho (doação)",
+    "category": "Grãos e Cereais",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "Mogi Guaçu/SP",
+    "isUgly": true,
+    "isDonation": true,
+    "producer": {
+      "id": "prod7",
+      "name": "Fazenda Boa Esperança",
+      "location": "Mogi Guaçu/SP",
+      "contactUrl": "https://wa.me/5511933333333"
+    },
+    "createdAt": "2025-11-08T10:00:00Z"
+  },
+  {
+    "id": "p17",
+    "title": "Leite (doação)",
+    "category": "Laticínios",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "São Pedro/SP",
+    "isUgly": false,
+    "isDonation": true,
+    "producer": {
+      "id": "prod4",
+      "name": "Sítio Bom Leite",
+      "location": "São Pedro/SP",
+      "contactUrl": "https://wa.me/5511966666666"
+    },
+    "createdAt": "2025-11-09T10:00:00Z"
+  },
+  {
+    "id": "p18",
+    "title": "Banana Nanica (fora do padrão)",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 2.3,
+    "stock": 120,
+    "location": "Campinas/SP",
+    "isUgly": true,
+    "isDonation": false,
+    "producer": {
+      "id": "prod2",
+      "name": "Chácara Santa Luzia",
+      "location": "Campinas/SP",
+      "contactUrl": "https://wa.me/5511988888888"
+    },
+    "createdAt": "2025-11-09T12:00:00Z"
+  },
+  {
+    "id": "p19",
+    "title": "Mandioca descascada",
+    "category": "Hortifruti",
+    "unit": "kg",
+    "price": 6.0,
+    "stock": 50,
+    "location": "Rio Claro/SP",
+    "isUgly": false,
+    "isDonation": false,
+    "producer": {
+      "id": "prod8",
+      "name": "Sítio Campo Alegre",
+      "location": "Rio Claro/SP",
+      "contactUrl": "https://wa.me/5511922222222"
+    },
+    "createdAt": "2025-11-09T13:00:00Z"
+  },
+  {
+    "id": "p20",
+    "title": "Pães caseiros excedentes (doação)",
+    "category": "Outros",
+    "unit": null,
+    "price": null,
+    "stock": null,
+    "location": "Rio Claro/SP",
+    "isUgly": false,
+    "isDonation": true,
+    "producer": {
+      "id": "prod8",
+      "name": "Sítio Campo Alegre",
+      "location": "Rio Claro/SP",
+      "contactUrl": "https://wa.me/5511922222222"
+    },
+    "createdAt": "2025-11-09T13:30:00Z"
+  }
+]

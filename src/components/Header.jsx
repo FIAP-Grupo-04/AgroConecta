@@ -85,8 +85,6 @@ export default function Header() {
                 className="user-menu-popover"
                 aria-label="Menu do usuário"
               >
-                {/* Se quiser mais opções, adicione aqui */}
-                {/* <button role="menuitem" onClick={() => navigate('/perfil')}>Meu Perfil</button> */}
                 <button role="menuitem" onClick={onLogout}>
                   Sair
                 </button>

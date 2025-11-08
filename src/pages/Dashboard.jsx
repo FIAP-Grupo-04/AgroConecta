@@ -16,7 +16,7 @@ export default function Dashboard() {
               imgSrc="/images/cart-shopping.png"
               title="Marketplace de Alimentos"
               text="Venda direta do produtor para o consumidor"
-              disabled
+              onClick={() => (window.location.href = "/marketplace")}
             />
             <DashboardCard
               imgSrc="/images/graph.png"
@@ -27,12 +27,6 @@ export default function Dashboard() {
           </div>
 
           <div className="assist-content">
-            <DashboardCard
-              imgSrc="/images/person.png"
-              title="Mão de Obra e Serviços"
-              text="Encontre ou ofereça vagas legalizadas ou serviços"
-              disabled
-            />
             <DashboardCard
               imgSrc="/images/book.png"
               title="Troca de Conhecimentos"

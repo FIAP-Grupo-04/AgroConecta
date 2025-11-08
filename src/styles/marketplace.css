@@ -1,0 +1,487 @@
+/* ===== Paleta ===== */
+:root {
+  --agc-green-600: #198754; /* verde principal */
+  --agc-green-700: #157347;
+  --agc-green-100: #e9f7ef;
+  --agc-gray-100: #f7f7f7;
+  --agc-gray-300: #e2e2e2;
+  --agc-gray-600: #6b7280;
+  --agc-yellow-100: #fff8db;
+  --agc-yellow-700: #a16207;
+  --agc-blue-100: #e7f2ff;
+  --agc-blue-700: #1d4ed8;
+  --agc-radius: 12px;
+}
+
+/* ===== Layout da página ===== */
+.agc-page {
+  padding: 24px;
+}
+.agc-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--agc-green-700);
+  margin: 0 0 12px 0;
+}
+
+/* ===== Botões ===== */
+.agc-btn {
+  border: 0;
+  border-radius: var(--agc-radius);
+  padding: 10px 14px;
+  cursor: pointer;
+  background: var(--agc-green-600);
+  color: #fff;
+  font-weight: 600;
+  transition: 0.15s;
+}
+.agc-btn:hover {
+  background: var(--agc-green-700);
+}
+.agc-btn--ghost {
+  background: #fff;
+  color: var(--agc-green-700);
+  border: 1px solid var(--agc-green-700);
+}
+.agc-btn--ghost:hover {
+  background: var(--agc-green-100);
+}
+
+/* ===== Abas ===== */
+.agc-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+.agc-tab {
+  padding: 8px 12px;
+  border-radius: var(--agc-radius);
+  border: 1px solid var(--agc-gray-300);
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font-weight: 600;
+}
+.agc-tab.is-active {
+  background: var(--agc-green-100);
+  border-color: var(--agc-green-700);
+  color: var(--agc-green-700);
+}
+
+/* ===== FilterBar ===== */
+.agc-filterbar {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 160px 1fr 160px; /* busca | categoria | localidade | ordenação */
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 820px) {
+  .agc-filterbar {
+    grid-template-columns: 1fr;
+  }
+}
+.agc-input,
+.agc-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--agc-gray-300);
+  border-radius: var(--agc-radius);
+  background: #fff;
+  outline: none;
+}
+.agc-input:focus,
+.agc-select:focus {
+  border-color: var(--agc-green-700);
+  box-shadow: 0 0 0 3px #19875422;
+}
+.agc-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111;
+}
+
+/* ===== Lista / Cards provisórios ===== */
+.agc-list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 1024px) {
+  .agc-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .agc-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.agc-card {
+  border: 1px solid var(--agc-gray-300);
+  border-radius: var(--agc-radius);
+  padding: 14px;
+  background: #fff;
+}
+.agc-meta {
+  color: var(--agc-gray-600);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.agc-name {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.agc-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.agc-badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  display: inline-block;
+}
+.agc-badge--ugly {
+  background: var(--agc-yellow-100);
+  color: var(--agc-yellow-700);
+  border-color: #f4e4a1;
+}
+.agc-badge--donation {
+  background: var(--agc-blue-100);
+  color: var(--agc-blue-700);
+  border-color: #b8d5ff;
+}
+
+.agc-price {
+  font-weight: 700;
+}
+.agc-muted {
+  color: var(--agc-gray-600);
+  font-size: 13px;
+}
+
+/* ===== Card image ===== */
+.agc-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--agc-radius);
+  margin-bottom: 10px;
+  background: var(--agc-gray-100);
+}
+.agc-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Quantity stepper ===== */
+.agc-qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.agc-qty-input {
+  width: 76px;
+  text-align: center;
+  padding: 8px 10px;
+  border: 1px solid var(--agc-gray-300);
+  border-radius: var(--agc-radius);
+}
+.agc-qty-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--agc-gray-300);
+  background: #fff;
+  border-radius: var(--agc-radius);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+.agc-qty-btn:hover {
+  background: var(--agc-gray-100);
+}
+
+/* ===== Drawer ===== */
+.agc-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 380px;
+  max-width: 92vw;
+  background: #fff;
+  border-left: 1px solid var(--agc-gray-300);
+  transform: translateX(100%);
+  transition: transform 0.2s ease;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+.agc-drawer.is-open {
+  transform: translateX(0);
+}
+
+.agc-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--agc-gray-300);
+}
+.agc-drawer-close {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--agc-radius);
+  border: 1px solid var(--agc-gray-300);
+  background: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+.agc-drawer-body {
+  padding: 12px 14px;
+  overflow: auto;
+  flex: 1;
+}
+.agc-drawer-footer {
+  padding: 12px 14px;
+  border-top: 1px solid var(--agc-gray-300);
+  background: #fff;
+  display: grid;
+  gap: 8px;
+}
+.agc-drawer-total {
+  font-size: 16px;
+}
+.agc-drawer-actions {
+  display: flex;
+  gap: 8px;
+}
+.agc-drawer-list {
+  display: grid;
+  gap: 12px;
+}
+.agc-drawer-item {
+  border: 1px solid var(--agc-gray-300);
+  border-radius: var(--agc-radius);
+  padding: 10px;
+}
+.agc-drawer-title {
+  font-weight: 700;
+}
+.agc-drawer-meta {
+  font-size: 12px;
+  color: var(--agc-gray-600);
+  margin-bottom: 8px;
+}
+.agc-drawer-row {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+}
+@media (max-width: 420px) {
+  .agc-drawer-row {
+    grid-template-columns: 1fr;
+  }
+}
+.agc-drawer-price {
+  font-size: 14px;
+  color: #111;
+}
+.agc-drawer-subtotal {
+  font-size: 14px;
+  color: #111;
+}
+
+/* ===== Modal ===== */
+.agc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+}
+.agc-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: #0006;
+}
+.agc-modal-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(760px, 92vw);
+  max-height: 86vh;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid var(--agc-gray-300);
+  border-radius: var(--agc-radius);
+  display: flex;
+  flex-direction: column;
+}
+.agc-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--agc-gray-300);
+}
+.agc-modal-body {
+  padding: 12px 14px;
+  display: grid;
+  gap: 12px;
+}
+.agc-modal-footer {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding-top: 6px;
+}
+
+.agc-row {
+  display: grid;
+  gap: 6px;
+}
+.agc-label {
+  font-size: 13px;
+  color: #111;
+}
+.agc-grid-2 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+.agc-grid-3 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 640px) {
+  .agc-grid-2,
+  .agc-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Toggle Venda/Doação */
+.agc-toggle {
+  display: inline-flex;
+  background: #fff;
+  border: 1px solid var(--agc-gray-300);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.agc-toggle-btn {
+  padding: 8px 14px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+.agc-toggle-btn.is-active {
+  background: var(--agc-green-100);
+  color: var(--agc-green-700);
+}
+
+/* ===== Toasts ===== */
+.agc-toast-wrap {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  gap: 8px;
+  z-index: 70;
+}
+.agc-toast {
+  background: #111;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  max-width: 80vw;
+  box-shadow: 0 6px 20px #0003;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.98;
+  transform: translateY(0);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.agc-toast--success {
+  background: var(--agc-green-700);
+}
+.agc-toast--error {
+  background: #b42318;
+}
+.agc-toast--info {
+  background: #111;
+}
+
+/* ===== Sugestão de preço ===== */
+.agc-quote {
+  border: 1px dashed var(--agc-green-700);
+  background: var(--agc-green-100);
+  padding: 10px;
+  border-radius: var(--agc-radius);
+  font-size: 14px;
+  color: #0f5132;
+}
+.agc-quote b {
+  font-weight: 700;
+}
+.agc-quote-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* ===== Layout padrão AgroConecta para a página Marketplace ===== */
+.marketplace-main {
+  background: #f5f5f5; /* igual dashboard/contato */
+  color: #222;
+  min-height: calc(100vh - 64px); /* deixa espaço abaixo do header */
+  padding: 24px 0;
+}
+
+.marketplace-container {
+  width: 1200px;
+  max-width: 92vw;
+  margin: 0 auto;
+}
+
+/* header interno da página (título + botões) */
+.marketplace-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.marketplace-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--agc-green-700);
+}
+
+.marketplace-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Ajustes finos nos filtros quando estão no container de 1200px */
+.marketplace-container .agc-filterbar {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* Grid resp. já existe (agc-list). Só garantimos espaço ao fim */
+.marketplace-container .agc-list {
+  margin-bottom: 20px;
+}
