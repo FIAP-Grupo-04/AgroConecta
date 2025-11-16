@@ -82,7 +82,6 @@ function MarketplaceInner() {
   function handleSubmitNewProduct(newProduct, isDonation) {
     addProduct(newProduct);
     setActiveTab(isDonation ? "doar" : "comprar");
-    toast(isDonation ? "Doação publicada!" : "Produto publicado!", "success");
   }
 
   return (
@@ -164,7 +163,6 @@ function MarketplaceInner() {
   );
 }
 
-// Provider local para os toasts desta página
 export default function Marketplace() {
   return (
     <ToastProvider>

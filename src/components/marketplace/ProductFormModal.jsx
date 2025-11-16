@@ -1,6 +1,4 @@
-// src/components/marketplace/ProductFormModal.jsx
-import { useEffect, useMemo, useState } from "react";
-import { loadCotacoes } from "../../utils/quotes";
+import { useEffect, useState } from "react";
 import { useToast } from "../ui/Toast";
 
 export default function ProductFormModal({
@@ -21,19 +19,10 @@ export default function ProductFormModal({
   const [unit, setUnit] = useState("");
   const [stock, setStock] = useState("");
   const [phone, setPhone] = useState("");
-  const [quotesMap, setQuotesMap] = useState({});
-  const [quote, setQuote] = useState(null);
 
   useEffect(() => {
     if (!open) return;
-    (async () => {
-      const q = await loadCotacoes();
-      setQuotesMap(q || {});
-    })();
-  }, [open]);
-
-  useEffect(() => {
-    if (!open) return;
+    // limpa ao abrir
     setMode("venda");
     setTitle("");
     setCategory(initialCategory || "");
@@ -43,16 +32,7 @@ export default function ProductFormModal({
     setUnit("");
     setStock("");
     setPhone("");
-    setQuote(null);
   }, [open, initialCategory]);
-
-  useEffect(() => {
-    if (!category || mode === "doacao") {
-      setQuote(null);
-      return;
-    }
-    setQuote(quotesMap[category] || null);
-  }, [category, mode, quotesMap]);
 
   const isDonation = mode === "doacao";
 
@@ -65,13 +45,6 @@ export default function ProductFormModal({
     "Outros",
   ];
   const unitOptions = ["kg", "cx", "un", "lt", "saca", "dz"];
-
-  function applyQuote() {
-    if (!quote) return;
-    if (quote.precoMedio != null) setPrice(String(quote.precoMedio));
-    if (quote.unidade) setUnit(quote.unidade);
-    toast("Preço sugerido aplicado", "success");
-  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -89,12 +62,16 @@ export default function ProductFormModal({
 
     let priceNum = null;
     let stockNum = null;
+
+    // validações de venda
     if (!isDonation) {
       if (!price) return toast("Informe o preço.", "error");
       if (!unit.trim()) return toast("Escolha a unidade.", "error");
       if (!stock) return toast("Informe o estoque.", "error");
+
       priceNum = Number(String(price).replace(",", "."));
       stockNum = Number(stock);
+
       if (Number.isNaN(priceNum) || priceNum <= 0)
         return toast("Preço inválido.", "error");
       if (Number.isNaN(stockNum) || stockNum < 1)
@@ -210,28 +187,6 @@ export default function ProductFormModal({
               />
             </div>
           </div>
-
-          {/* cotação */}
-          {!isDonation && quote && (
-            <div className="agc-quote">
-              <div>
-                <b>Sugestão para {category}:</b>{" "}
-                {quote.precoMedio != null
-                  ? `R$ ${Number(quote.precoMedio).toFixed(2)}`
-                  : "—"}
-                {quote.unidade ? ` / ${quote.unidade}` : ""}
-              </div>
-              <div className="agc-quote-actions">
-                <button
-                  type="button"
-                  className="agc-btn agc-btn--ghost"
-                  onClick={applyQuote}
-                >
-                  Usar preço sugerido
-                </button>
-              </div>
-            </div>
-          )}
 
           {!isDonation && (
             <div className="agc-grid-3">
