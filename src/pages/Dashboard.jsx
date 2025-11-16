@@ -41,7 +41,7 @@ export default function Dashboard() {
             Clique para assistir ao vídeo:
             <span>
               <a
-                href="https://www.youtube.com/watch?v=TwPxlP_ZmtU"
+                href="https://www.youtube.com/watch?v=UWnW52cNPis"
                 target="_blank"
                 rel="noreferrer"
               >
